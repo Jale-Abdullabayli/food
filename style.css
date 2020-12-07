@@ -1,0 +1,211 @@
+	* {
+	    box-sizing: border-box;
+	}
+	
+	html {
+	    scroll-behavior: smooth;
+	}
+	
+	body {
+	    font-family: sans-serif;
+	    margin: 0 5%;
+	    padding: 0;
+	}
+	
+	header {
+	    overflow: hidden;
+	    background-color: white;
+	    width: 90%;
+	    top: 0;
+	    height: 70px;
+	}
+	
+	#menuButton {
+	    float: left;
+	    width: 25px;
+	    height: auto;
+	    padding: 20px 0;
+	    cursor: pointer;
+	}
+	
+	#menu {
+	    width: 40%;
+	    background-color: white;
+	    height: 100%;
+	    position: fixed;
+	    left: 0;
+	    z-index: 1;
+	    left: -40%;
+	    transition: left 1s;
+	}
+	
+	#menu>div {
+	    height: 5vw;
+	    padding: 20px;
+	    cursor: pointer;
+	}
+	
+	#menu>div:hover {
+	    background-color: lightgray;
+	}
+	
+	#Foods>div {
+	    float: left;
+	}
+	
+	.Pic {
+	    max-width: 25%;
+	    float: left;
+	    text-align: center;
+	    padding: 0 10px;
+	    transition: padding 0.3s;
+	}
+	
+	.Pic:hover {
+	    padding: 0 15px;
+	}
+	
+	.Pic:hover img {
+	    filter: grayscale(0%);
+	}
+	
+	.Pic>img {
+	    box-shadow: 5px 5px 10px gray;
+	    border-radius: 5px;
+	    filter: grayscale(30%);
+	}
+	
+	.Pic h3 {
+	    font-family: Lucida Handwriting;
+	    font-weight: normal;
+	    font-size: 1.5vw;
+	}
+	
+	.Pic h4 {
+	    font-weight: normal;
+	    font-size: 1vw;
+	}
+	
+	.Pic img {
+	    max-width: 100%;
+	    height: auto;
+	}
+	
+	#FoodMan {
+	    text-align: center;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	}
+	
+	div a img:hover {
+	    background-color: lightgray;
+	}
+	
+	.Pagination {
+	    display: inline-block;
+	    list-style-type: none;
+	    margin-top: 50px;
+	    overflow: hidden;
+	}
+	
+	.FooterUl {
+	    list-style-type: none;
+	    margin-left: -40px;
+	    display: inline-block;
+	    float: left;
+	}
+	
+	.FooterUl li {
+	    margin: 5px 3px 5px 3px;
+	    padding: 3px 5px 3px 5px;
+	    background-color: #616161;
+	    color: white;
+	    float: left;
+	}
+	
+	.Pagination li {
+	    float: left;
+	    text-decoration-style: none;
+	}
+	
+	.Pagination li a {
+	    text-decoration: none;
+	    color: black;
+	    padding: 20px;
+	}
+	
+	.Pagination li a:hover {
+	    background-color: black;
+	    color: white;
+	}
+	
+	.hr {
+	    background-color: lightgray;
+	    width: 90%;
+	    margin-top: 50px;
+	}
+	
+	footer>div {
+	    width: 30%;
+	    float: left;
+	    margin-right: 3%;
+	    overflow: hidden;
+	}
+	
+	footer>div>h2 {
+	    font-family: Lucida Handwriting;
+	}
+	
+	footer {
+	    position: absolute;
+	    margin-bottom: 50px;
+	}
+	
+	.FooterSecondPart>div:hover {
+	    background-color: lightgray;
+	}
+	
+	.FooterSecondPart>div {
+	    overflow: auto;
+	}
+	
+	.FooterSecondPart>div img {
+	    width: 25%;
+	    height: auto;
+	    margin: 10px 5%;
+	    float: left;
+	}
+	
+	.FooterSecondPart>div h3 {
+	    font-weight: normal;
+	    font-size: 1.5vw;
+	}
+	
+	@media screen and (max-width: 600px) {
+	    .FooterSecondPart>div img {
+	        width: 15%;
+	    }
+	    .Pagination li a {
+	        padding: 10px;
+	    }
+	    .Pic {
+	        max-width: 100%;
+	        float: none;
+	    }
+	    footer>div:not(:first-child) {
+	        margin-top: 50px;
+	    }
+	    footer>div {
+	        width: 100%;
+	        float: none;
+	    }
+	    .FooterSecondPart>div h3 {
+	        font-size: 3vw;
+	    }
+	    .Pic h4 {
+	        font-size: 3vw;
+	    }
+	    .Pic h3 {
+	        font-size: 3.5vw;
+	    }
+	}
